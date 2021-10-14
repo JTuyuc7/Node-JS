@@ -6,7 +6,7 @@ const app = express();
 connectDB() // Connect to the DB
 
 
-app.use(express.json()); // Enable to use Joson with express
+app.use(express.json({ extended: true})); // Enable to use Joson with express
 
 // SHOW SOMENTHING ON THE BROWSER
 app.use('/api/users', users )
